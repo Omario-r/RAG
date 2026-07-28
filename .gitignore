@@ -1,0 +1,15 @@
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.DS_Store
+
+# окружение и секреты
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# данные и артефакты экспериментов
+data/
+corpus/
+*.qdrant-snapshot
+.obsidian
