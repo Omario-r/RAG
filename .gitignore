@@ -13,3 +13,6 @@ data/
 corpus/
 *.qdrant-snapshot
 .obsidian
+
+# настройки инструментов
+.claude/
