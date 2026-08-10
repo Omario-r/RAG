@@ -56,15 +56,15 @@ Qdrant публикует официальные нативные бинарни
 
 ## Что установлено
 
-| Компонент | Версия | Откуда | Права |
-|---|---|---|---|
-| Qdrant | 1.19.0 | Бинарник с GitHub-релиза | Не нужны |
-| llama.cpp | b10280 (`61881b1f7`) | `brew install llama.cpp` | Не нужны |
-| uv | 0.12.1 | `brew install uv` | Не нужны |
-| Эмбеддер | Qwen3-Embedding-0.6B Q8_0, 610 МБ | `Qwen/Qwen3-Embedding-0.6B-GGUF` | Apache 2.0 |
-| Реранкер | bge-reranker-v2-m3 Q8_0, 606 МБ | `gpustack/bge-reranker-v2-m3-GGUF` | Apache 2.0 |
-| Генеративная | T-lite-it-2.1 Q6_K, 6,26 ГиБ (с 10.08.2026) | `t-tech/T-lite-it-2.1-GGUF` | Apache 2.0 |
-| Дашборд Qdrant | 0.2.16 | Релиз `qdrant/qdrant-web-ui` | — |
+| Компонент      | Версия                                      | Откуда                             | Права      |
+| -------------- | ------------------------------------------- | ---------------------------------- | ---------- |
+| Qdrant         | 1.19.0                                      | Бинарник с GitHub-релиза           | Не нужны   |
+| llama.cpp      | b10280 (`61881b1f7`)                        | `brew install llama.cpp`           | Не нужны   |
+| uv             | 0.12.1                                      | `brew install uv`                  | Не нужны   |
+| Эмбеддер       | Qwen3-Embedding-0.6B Q8_0, 610 МБ           | `Qwen/Qwen3-Embedding-0.6B-GGUF`   | Apache 2.0 |
+| Реранкер       | bge-reranker-v2-m3 Q8_0, 606 МБ             | `gpustack/bge-reranker-v2-m3-GGUF` | Apache 2.0 |
+| Генеративная   | T-lite-it-2.1 Q6_K, 6,26 ГиБ (с 10.08.2026) | `t-tech/T-lite-it-2.1-GGUF`        | Apache 2.0 |
+| Дашборд Qdrant | 0.2.16                                      | Релиз `qdrant/qdrant-web-ui`       | —          |
 
 Обе модели с чистыми лицензиями — критерий коммерческого использования в
 контуре клиента из `Business/legal-ai/02-tech.md` соблюдён.
