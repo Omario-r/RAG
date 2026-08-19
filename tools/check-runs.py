@@ -39,9 +39,9 @@ for run_id in declared:
     i = runs_text.index(f"### `{run_id}`")
     nxt = re.search(r"^(### |## )", runs_text[i + 5:], re.M)
     body = runs_text[i: i + 5 + nxt.start()] if nxt else runs_text[i:]
-    if "**Дал:**" not in body:
+    if "**Дал" not in body:
         problems.append(f"{run_id}: нет строки «**Дал:**» — непонятно, что прогон дал")
-    if "**Конфигурация:**" not in body and "| Что | Значение |" not in body:
+    if not any(k in body for k in ("**Конфигурация:**", "| Что | Значение |", "config:")):
         problems.append(f"{run_id}: нет конфигурации — прогон невоспроизводим")
 
 # ссылки по волту

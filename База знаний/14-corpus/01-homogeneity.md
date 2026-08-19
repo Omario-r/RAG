@@ -112,12 +112,9 @@
 
 Полностью — в [09-measurement.md](09-measurement.md); здесь короткий список того, что относится именно к однородности, и все три пункта считаются **без вопросов и без разметки**, по корпусу и готовому индексу.
 
-- **Внутри- против междокументной близости.** Для каждого
-документа: средняя близость его фрагментов друг к другу против средней близости к фрагментам других документов. Разность — прямая мера того, кодирует ли представление «фрагмент этого документа» или «фрагмент такого типа». Близкая к нулю разность означает, что различать документы вектором нечем.
-- **Доля почти-дублей** при нескольких порогах Жаккара — кривая,
-а не одно число: она показывает, есть ли в корпусе плато (шаблон) или гладкое распределение (естественное разнообразие).
-- **Диагностика хабов** — сколько фрагментов неоправданно часто
-попадают в чужие выдачи. Механика и пороги — в [02-limits.md](02-limits.md), раздел 5.
+- **Внутри- против междокументной близости.** Для каждого документа: средняя близость его фрагментов друг к другу против средней близости к фрагментам других документов. Разность — прямая мера того, кодирует ли представление «фрагмент этого документа» или «фрагмент такого типа». Близкая к нулю разность означает, что различать документы вектором нечем.
+- **Доля почти-дублей** при нескольких порогах Жаккара — кривая, а не одно число: она показывает, есть ли в корпусе плато (шаблон) или гладкое распределение (естественное разнообразие).
+- **Диагностика хабов** — сколько фрагментов неоправданно часто попадают в чужие выдачи. Механика и пороги — в [02-limits.md](02-limits.md), раздел 5.
 
 ---
 
@@ -127,24 +124,15 @@
 
 ## Источники
 
-- Subedi N., Abdelaty A., Sheshappanavar S. V. *When More Documents
-Hurt RAG: Mitigating Vector Search Dilution with Domain-Scoped, Model-Agnostic Retrieval.* arXiv:2606.11350, 06.2026. **Препринт, не рецензирован**; цифры 75 % → <40 % и 58,6 % → 43,2 % и понятие «разбавления» — оттуда.
-- Reimers N., Gurevych I. *The Curse of Dense Low-Dimensional
-Information Retrieval for Large Index Sizes.* arXiv:2012.14210, ACL 2021. Плотный поиск с малой размерностью деградирует при росте индекса быстрее BM25.
-- Caspari L., Dastidar K. G., Zerhoudi S. и др. *Beyond Benchmarks:
-Evaluating Embedding Model Similarity for Retrieval Augmented Generation Systems.* arXiv:2407.08275, 07.2024. Жаккар top-10 между моделями; 0,18 на TREC-COVID.
-- *Succeeding at Scale: Enterprise Retrieval Benchmark Construction
-and Index-Preserving Query Adaptation for Multi-Tenant Search.* arXiv:2601.04646 (v4, 06.2026). Набор DevRev-Search: 383 вопроса, 65 200 фрагментов, 13,61 верного фрагмента на вопрос при медиане 6.
-- Modarressi A. и др. *NoLiMa: Long-Context Evaluation Beyond
-Literal Matching.* arXiv:2502.05167, ICML 2025. Деградация на 32K; GPT-4o 99,3 % → 69,7 %.
-- Cuconasu F. и др. *Do RAG Systems Really Suffer From Positional
-Bias?* EMNLP 2025 (aclanthology 2025.emnlp-main.1422). Более 60 % вопросов имеют сильно отвлекающий пассаж в top-10.
-- Cuconasu F. и др. *The Power of Noise: Redefining Retrieval for
-RAG Systems.* SIGIR 2024. Исходное заявление о пользе случайных документов.
-- *The Powerless Noise: How Experimental Settings Shape the Reported
-Power of Noise.* SIGIR 2026, DOI 10.1145/3805712.3808556 (arXiv:2607.03615). Воспроизведение: эффект держится только в исходном узком режиме.
-- Upadhyay R., Pradeep R., Thakur N. и др. *Ragnarök: A Reusable RAG
-Framework and Baselines for TREC 2024 RAG Track.* arXiv:2406.16828, 06.2024. Дедупликация MS MARCO V2.1: MinHash-LSH по 9-словным шинглам, −8,35 %, 113 520 750 пассажей.
+- [When More Documents Hurt RAG: Mitigating Vector Search Dilution — arXiv 2606.11350, 06.2026](https://arxiv.org/abs/2606.11350) — **препринт, не рецензирован**; 75 % → ниже 40 % при росте корпуса, понятие разбавления выдачи
+- [The Curse of Dense Low-Dimensional Information Retrieval for Large Index Sizes — arXiv 2012.14210, ACL 2021](https://arxiv.org/abs/2012.14210) — плотный поиск малой размерности деградирует при росте индекса быстрее BM25
+- [Beyond Benchmarks: Evaluating Embedding Model Similarity for RAG Systems — arXiv 2407.08275, 07.2024](https://arxiv.org/abs/2407.08275) — совпадение top-10 по Жаккару между эмбеддерами ниже 0,5; 0,18 на TREC-COVID
+- [Succeeding at Scale: Enterprise Retrieval Benchmark Construction and Index-Preserving Query Adaptation — arXiv 2601.04646, 06.2026](https://arxiv.org/abs/2601.04646) — 13,61 верного фрагмента на вопрос при медиане 6 и σ 21,4
+- [NoLiMa: Long-Context Evaluation Beyond Literal Matching — arXiv 2502.05167, ICML 2025](https://arxiv.org/abs/2502.05167) — деградация на 32K токенах; GPT-4o 99,3 % → 69,7 %
+- [Do RAG Systems Really Suffer From Positional Bias? — EMNLP 2025](https://aclanthology.org/2025.emnlp-main.1422/) — более 60 % вопросов имеют сильно отвлекающий пассаж в top-10
+- [The Power of Noise: Redefining Retrieval for RAG Systems — SIGIR 2024](https://iris.uniroma1.it/retrieve/ec69f005-e517-4726-9411-d0a5190ed93c/Cucosanu_Power_2024.pdf) — исходное заявление о пользе случайных документов в контексте
+- [The Powerless Noise: How Experimental Settings Shape the Reported Power of Noise — arXiv 2607.03615, SIGIR 2026](https://arxiv.org/abs/2607.03615) — воспроизведение: эффект держится только в исходном узком режиме
+- [Ragnarök: A Reusable RAG Framework and Baselines for TREC 2024 RAG Track — arXiv 2406.16828, 06.2024](https://arxiv.org/abs/2406.16828) — дедупликация MS MARCO V2.1 через MinHash-LSH, −8,35 %
 
 ---
 

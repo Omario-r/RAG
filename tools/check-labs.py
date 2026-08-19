@@ -32,7 +32,9 @@ LABS = sorted(LABS_DIR.glob(PATTERN))
 
 # --- заголовки всех документов волта, чтобы проверить вики-ссылки
 headings = {}
-sources = list(VAULT.glob("*.md")) + list(LABS_DIR.glob("*.md")) + list((VAULT / "База знаний").rglob("*.md"))
+sources = (list(VAULT.glob("*.md")) + list(LABS_DIR.glob("*.md"))
+           + list((VAULT / "checks").glob("*.md")) + list((VAULT / "Рецепты").glob("*.md"))
+           + list((VAULT / "Партнёр").glob("*.md")) + list((VAULT / "База знаний").rglob("*.md")))
 for f in sources:
     hs = {
         m.group(1).strip() for m in re.finditer(r"^#{1,6}\s+(.+)$", f.read_text(encoding="utf-8"), re.M)
