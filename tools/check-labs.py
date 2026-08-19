@@ -26,15 +26,20 @@ import sys
 from pathlib import Path
 
 VAULT = Path(__file__).resolve().parents[1]
+LABS_DIR = VAULT / "Лабы"
 PATTERN = sys.argv[1] if len(sys.argv) > 1 else "lab-0[3-7]*.md"
-LABS = sorted(VAULT.glob(PATTERN))
+LABS = sorted(LABS_DIR.glob(PATTERN))
 
 # --- заголовки всех документов волта, чтобы проверить вики-ссылки
 headings = {}
-for f in VAULT.glob("*.md"):
-    headings[f.stem] = {
+sources = list(VAULT.glob("*.md")) + list(LABS_DIR.glob("*.md")) + list((VAULT / "База знаний").rglob("*.md"))
+for f in sources:
+    hs = {
         m.group(1).strip() for m in re.finditer(r"^#{1,6}\s+(.+)$", f.read_text(encoding="utf-8"), re.M)
     }
+    # ключи: и короткое имя, и путь от корня волта без расширения
+    headings.setdefault(f.stem, set()).update(hs)
+    headings.setdefault(str(f.relative_to(VAULT).with_suffix("")), set()).update(hs)
 
 print(f"{'лаба':22s} {'строк':>6} {'шагов':>6} {'макс шаг':>9} {'>80':>5} {'до 1-й команды':>15}")
 print("-" * 72)
@@ -92,9 +97,9 @@ for lab in LABS:
     for m in re.finditer(r"\]\(#", text):
         problems.append(f"{lab.name}: markdown-якорь вместо вики-ссылки")
 
-    # ссылки на файлы волта
-    for m in re.finditer(r"\]\((?!http)([\w\-.]+\.md)\)", text):
-        if not (VAULT / m.group(1)).exists():
+    # ссылки на файлы волта — из папки лаб, поэтому относительно неё
+    for m in re.finditer(r"\]\((?!http)((?:\.\./)?[\w\-. ]+\.md)\)", text):
+        if not (lab.parent / m.group(1)).exists():
             problems.append(f"{lab.name}: ссылка на несуществующий файл {m.group(1)}")
 
 print()
