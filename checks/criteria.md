@@ -321,4 +321,4 @@ gs-v2 и пересматриваются после него — измерен
 `../База знаний/05-embeddings/01-methods.md`, раздел 8.
 
 Задержка и память — свойство стенда, поэтому измеряются и записываются раздельно:
-[checks-local.md](checks-local.md), [checks-partner.md](checks-partner.md).
+[checks-local.md](checks-local.md), [03-checks.md](../Партнёр/03-checks.md).
