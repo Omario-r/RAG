@@ -28,3 +28,4 @@ partner-docs/
 .claude/*
 !.claude/settings.json
 !.claude/skills/
+*.fb2
