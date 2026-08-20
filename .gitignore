@@ -27,3 +27,4 @@ partner-docs/
 # Абсолютных путей и секретов в нём нет. Личные правки — в settings.local.json.
 .claude/*
 !.claude/settings.json
+!.claude/skills/

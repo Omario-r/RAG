@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 VAULT = Path(__file__).resolve().parents[1]
-LAYERS = ["*.md", "Лабы/*.md", "checks/*.md", "Партнёр/*.md", "Рецепты/*.md"]
+LAYERS = ["*.md", "Лабы/*.md", "checks/*.md", "Партнёр/*.md", "Рецепты/*.md", "Коллега/*.md"]
 ALL = LAYERS + ["База знаний/**/*.md"]
 
 
