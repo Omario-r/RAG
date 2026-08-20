@@ -116,4 +116,4 @@
 
 ---
 
-**Смежные разделы:** [05-embeddings/02-evaluation.md](../05-embeddings/02-evaluation.md) — как выбирать эмбеддер, если рейтингу верить нельзя; [07-retrieval/02-evaluation.md](../07-retrieval/02-evaluation.md) — протокол сравнения конфигураций; [04-questions.md](04-questions.md) — приёмы построения наборов, заимствуемые из публичных.
+**Смежные разделы:** [05-embeddings/02-evaluation.md](../05-embeddings/02-evaluation.md) — как выбирать эмбеддер, если рейтингу верить нельзя; [07-retrieval/07-evaluation.md](../07-retrieval/07-evaluation.md) — протокол сравнения конфигураций; [04-questions.md](04-questions.md) — приёмы построения наборов, заимствуемые из публичных.

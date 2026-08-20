@@ -102,6 +102,6 @@
 
 ---
 
-**Смежные словари:** [03-pipeline/07-glossary.md](../03-pipeline/07-glossary.md) — термины конвейера в целом; [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md) — термины поиска, включая природу оценок релевантности; [08-graphrag/07-glossary.md](../08-graphrag/07-glossary.md) — термины связывания фрагментов.
+**Смежные словари:** [03-pipeline/07-glossary.md](../03-pipeline/07-glossary.md) — термины конвейера в целом; [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md) — термины поиска, включая природу оценок релевантности; [08-graphrag/07-glossary.md](../08-graphrag/07-glossary.md) — термины связывания фрагментов.
 
 Назад к карте раздела: [README.md](README.md).

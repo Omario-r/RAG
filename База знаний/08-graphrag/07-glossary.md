@@ -2,7 +2,7 @@
 
 Дата составления: 18.08.2026. Словарь к файлам [01-family.md](01-family.md) — [06-evaluation.md](06-evaluation.md). Формат тот же, что у корневого [99-glossary.md](../../99-glossary.md): не определение из учебника, а «что это значит на практике и почему про это стоит знать».
 
-Термины нарезки (чанк, parent-child, late chunking) здесь не повторяются — они в [04-chunking/03-glossary.md](../04-chunking/03-glossary.md); термины поиска (каскад, реранкер, RRF, декомпозиция) — в [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md). Здесь только то, что относится к связыванию фрагментов: чем связывают, как строят граф, как по нему ходят и как всё это меряют.
+Термины нарезки (чанк, parent-child, late chunking) здесь не повторяются — они в [04-chunking/10-glossary.md](../04-chunking/10-glossary.md); термины поиска (каскад, реранкер, RRF, декомпозиция) — в [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md). Здесь только то, что относится к связыванию фрагментов: чем связывают, как строят граф, как по нему ходят и как всё это меряют.
 
 ---
 
@@ -148,4 +148,4 @@
 
 ---
 
-**Смежные словари:** [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md) — поиск; [04-chunking/03-glossary.md](../04-chunking/03-glossary.md) — нарезка; [03-pipeline/07-glossary.md](../03-pipeline/07-glossary.md) — конвейер целиком; [99-glossary.md](../../99-glossary.md) — корневой словарь волта.
+**Смежные словари:** [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md) — поиск; [04-chunking/10-glossary.md](../04-chunking/10-glossary.md) — нарезка; [03-pipeline/07-glossary.md](../03-pipeline/07-glossary.md) — конвейер целиком; [99-glossary.md](../../99-glossary.md) — корневой словарь волта.

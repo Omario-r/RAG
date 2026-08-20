@@ -2,7 +2,7 @@
 
 Дата составления: 17.08.2026. Словарь к [01-methods.md](01-methods.md) и [02-evaluation.md](02-evaluation.md). Формат тот же, что у корневого [99-glossary.md](../../99-glossary.md): не определение из учебника, а «что это значит на практике и почему про это стоит знать».
 
-Базовые термины (эмбеддинг, размерность, косинусная близость, пойнт, HNSW, GGUF) — в корневом словаре, здесь не повторяются. Метрики поиска и всё про слияние и реранкеры — в [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md), термины нарезки — в [04-chunking/03-glossary.md](../04-chunking/03-glossary.md). Здесь только векторизация: как вектор получается, во что упаковывается, чем ограничен и как подгоняется под свой корпус.
+Базовые термины (эмбеддинг, размерность, косинусная близость, пойнт, HNSW, GGUF) — в корневом словаре, здесь не повторяются. Метрики поиска и всё про слияние и реранкеры — в [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md), термины нарезки — в [04-chunking/10-glossary.md](../04-chunking/10-glossary.md). Здесь только векторизация: как вектор получается, во что упаковывается, чем ограничен и как подгоняется под свой корпус.
 
 ---
 
@@ -202,4 +202,4 @@
 
 ---
 
-Соседние документы: [01-methods.md](01-methods.md), [02-evaluation.md](02-evaluation.md), общий словарь проекта — [99-glossary.md](../../99-glossary.md), словарь поиска — [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md), словарь чанкинга — [04-chunking/03-glossary.md](../04-chunking/03-glossary.md).
+Соседние документы: [01-methods.md](01-methods.md), [02-evaluation.md](02-evaluation.md), общий словарь проекта — [99-glossary.md](../../99-glossary.md), словарь поиска — [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md), словарь чанкинга — [04-chunking/10-glossary.md](../04-chunking/10-glossary.md).

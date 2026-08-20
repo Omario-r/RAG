@@ -2,7 +2,7 @@
 
 Файл 9 из 9 в разделе [06-vector-db](README.md). Формат тот же, что у корневого [99-glossary.md](../../99-glossary.md): не определение из учебника, а «что это значит на практике и почему про это стоит знать».
 
-Термины конкретной установки (коллекция, пойнт, payload, upsert, сегмент, оптимизатор, снапшот) — в корневом словаре. Термины векторизации — в [05-embeddings/03-glossary.md](../05-embeddings/03-glossary.md), термины поиска, слияния и реранкеров — в [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md), термины нарезки — в [04-chunking/03-glossary.md](../04-chunking/03-glossary.md).
+Термины конкретной установки (коллекция, пойнт, payload, upsert, сегмент, оптимизатор, снапшот) — в корневом словаре. Термины векторизации — в [05-embeddings/03-glossary.md](../05-embeddings/03-glossary.md), термины поиска, слияния и реранкеров — в [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md), термины нарезки — в [04-chunking/10-glossary.md](../04-chunking/10-glossary.md).
 
 Статьи сгруппированы по осям раздела.
 

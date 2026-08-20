@@ -2,7 +2,7 @@
 
 Дата составления: 20.08.2026. Словарь к файлам [01-homogeneity.md](01-homogeneity.md) — [09-measurement.md](09-measurement.md). Формат тот же, что у корневого [99-glossary.md](../../99-glossary.md): не определение из учебника, а «что это значит на практике и почему про это стоит знать».
 
-Термины соседей здесь не повторяются. Метрики и протоколы — в [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md); нарезка и её словарь — в [04-chunking/03-glossary.md](../04-chunking/03-glossary.md); инфраструктура (HNSW, пулинг, квантование) — в корневом словаре. Здесь только данные: из чего состоит корпус, чем он труден, как устроен набор, которым его меряют.
+Термины соседей здесь не повторяются. Метрики и протоколы — в [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md); нарезка и её словарь — в [04-chunking/10-glossary.md](../04-chunking/10-glossary.md); инфраструктура (HNSW, пулинг, квантование) — в корневом словаре. Здесь только данные: из чего состоит корпус, чем он труден, как устроен набор, которым его меряют.
 
 ---
 
@@ -120,4 +120,4 @@
 
 ---
 
-**Смежные разделы:** [04-chunking/03-glossary.md](../04-chunking/03-glossary.md), [07-retrieval/03-glossary.md](../07-retrieval/03-glossary.md), [99-glossary.md](../../99-glossary.md) — корневой словарь.
+**Смежные разделы:** [04-chunking/10-glossary.md](../04-chunking/10-glossary.md), [07-retrieval/08-glossary.md](../07-retrieval/08-glossary.md), [99-glossary.md](../../99-glossary.md) — корневой словарь.
