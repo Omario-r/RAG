@@ -320,4 +320,4 @@ nDCG умеет учитывать градации («этот пункт от�
 
 **Смежные разделы:** [14-corpus](../14-corpus) — золотой набор со стороны данных: откуда берутся вопросы и почему у одного вопроса много верных ответов; [06-vector-db/08-evaluation.md](../06-vector-db/08-evaluation.md) — ANN-recall как главная величина хранилища; [04-chunking/09-evaluation.md](../04-chunking/09-evaluation.md) — те же уровни со стороны нарезки; [03-pipeline/06-evaluation.md](../03-pipeline/06-evaluation.md) — атрибуция ошибки к узлу конвейера; [11-generation/08-evaluation.md](../11-generation/08-evaluation.md) — метрики ответа и границы модели-судьи.
 
-**В проектном слое:** критерии и прогоны — [checks/criteria.md](../../checks/criteria.md) и [checks/runs.md](../../checks/runs.md); наши замеры поиска — [05-retrieval-rerank.md](../../05-retrieval-rerank.md).
+**В проектном слое:** критерии и прогоны — [checks/criteria.md](criteria.md) и [checks/runs.md](runs.md); наши замеры поиска — [05-retrieval-rerank.md](../../05-retrieval-rerank.md).

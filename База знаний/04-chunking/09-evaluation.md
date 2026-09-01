@@ -173,4 +173,4 @@
 
 **Смежные разделы:** [07-retrieval/07-evaluation.md](../07-retrieval/07-evaluation.md) — метрики ранжирования, статистика значимости и золотой набор со стороны прибора; [14-corpus/04-questions.md](../14-corpus/04-questions.md) — откуда берутся классы вопросов; [14-corpus/09-measurement.md](../14-corpus/09-measurement.md) — что ещё считается по корпусу без разметки; [03-pipeline/06-evaluation.md](../03-pipeline/06-evaluation.md) — атрибуция ошибки к узлу конвейера.
 
-**В проектном слое:** [checks/criteria.md](../../checks/criteria.md) — наши критерии, [checks/runs.md](../../checks/runs.md) — журнал прогонов.
+**В проектном слое:** [checks/criteria.md](criteria.md) — наши критерии, [checks/runs.md](runs.md) — журнал прогонов.

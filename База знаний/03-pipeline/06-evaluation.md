@@ -210,6 +210,6 @@
 
 ---
 
-**Куда это ложится в проекте:** [checks/](../../checks/README.md) — дисциплина проверок целиком; [checks/criteria.md](../../checks/criteria.md) — пороги; [checks/runs.md](../../checks/runs.md) — схема прогона; [11-evidence.md](../../11-evidence.md) — доказательная база.
+**Куда это ложится в проекте:** [checks/](Проверки/README.md) — дисциплина проверок целиком; [checks/criteria.md](criteria.md) — пороги; [checks/runs.md](runs.md) — схема прогона; [11-evidence.md](../../11-evidence.md) — доказательная база.
 
 Дальше: [07-glossary.md](07-glossary.md) — словарь раздела.

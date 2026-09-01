@@ -103,7 +103,7 @@
 
 ### 4.3. Дубликаты и почти-дубликаты
 
-Доля пойнтов с близостью выше 0,98 к другому пойнту. Для корпуса типовых договоров это ожидаемо высокая величина, и её надо **знать**, потому что она напрямую определяет, нужна ли дедупликация выдачи и почему золотой набор мультирелевантен (открытый вопрос 2 в [checks/README.md](../../checks/README.md)).
+Доля пойнтов с близостью выше 0,98 к другому пойнту. Для корпуса типовых договоров это ожидаемо высокая величина, и её надо **знать**, потому что она напрямую определяет, нужна ли дедупликация выдачи и почему золотой набор мультирелевантен (открытый вопрос 2 в [checks/README.md](Проверки/README.md)).
 
 ### 4.4. Различимость документов
 
@@ -303,4 +303,4 @@ Hit@k и Recall@k печатать **рядом**, порознь ни одну 
 - [Adversarial Hubness in Multi-Modal Retrieval — arXiv 2412.14113](https://arxiv.org/abs/2412.14113) — хабы как эксплуатируемое свойство пространства
 - [Text Embeddings Reveal (Almost) As Much As Text — arXiv 2310.06816](https://arxiv.org/abs/2310.06816)
 
-Соседние документы: [01-methods.md](01-methods.md), [03-glossary.md](03-glossary.md). Метрики поиска и дисциплина разметки — [07-retrieval/07-evaluation.md](../07-retrieval/07-evaluation.md). Наши собственные критерии и прогоны — в [checks/criteria.md](../../checks/criteria.md) и [checks/runs.md](../../checks/runs.md), замеры векторизации — в [03-embeddings.md](../../03-embeddings.md) и [11-evidence.md](../../11-evidence.md).
+Соседние документы: [01-methods.md](01-methods.md), [03-glossary.md](03-glossary.md). Метрики поиска и дисциплина разметки — [07-retrieval/07-evaluation.md](../07-retrieval/07-evaluation.md). Наши собственные критерии и прогоны — в [checks/criteria.md](criteria.md) и [checks/runs.md](runs.md), замеры векторизации — в [03-embeddings.md](../../03-embeddings.md) и [11-evidence.md](../../11-evidence.md).
